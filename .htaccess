@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]*)\-([^/]*)\-([^/]*)\-([^/]*)\-([^/]*).png$ index.php?i=$1&h=$2&w=$3&e=$4&d=$5 [L]
+RewriteRule ^([^/]*)\-([^/]*)\-([^/]*)\-([^/]*)\-([^/]*).html$ index.php?i=$1&h=$2&w=$3&e=$4&d=$5 [L]
